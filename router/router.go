@@ -10,6 +10,8 @@ func SetRouter(testType string, num int) {
 			hackrank.SimpleArraySum()
 		case 2: // ComparetheTriplets
 			hackrank.ComparetheTriplets()
+		case 3: // A Very Big Sum
+			hackrank.AVeryBigSum()
 		case 4: // Diagonal Difference
 			hackrank.DiagonalDifference()
 		}

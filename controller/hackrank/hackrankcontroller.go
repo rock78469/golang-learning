@@ -13,6 +13,14 @@ func SimpleArraySum() {
 
 }
 
+// AVery Big Sum
+func AVeryBigSum() {
+	ar := []int64{1000000001, 1000000002, 1000000003, 1000000004, 1000000005}
+	r := m.AVeryBigSum(ar)
+	fmt.Println(r)
+}
+
+// Comparethe Triplets
 func ComparetheTriplets() {
 	userA := []int32{2, 5, 7}
 	userB := []int32{3, 1, 8}
