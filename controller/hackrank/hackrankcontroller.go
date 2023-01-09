@@ -13,6 +13,13 @@ func SimpleArraySum() {
 
 }
 
+func ComparetheTriplets() {
+	userA := []int32{2, 5, 7}
+	userB := []int32{3, 1, 8}
+	r := m.ComparetheTriplets(userA, userB)
+	fmt.Println(r)
+}
+
 // Diagonal Difference
 func DiagonalDifference() {
 	cc := [][]int32{{1, 4, 8, 8}, {6, 2, 9, 2}, {7, 4, 2, 6}, {6, 7, 4, 3}}

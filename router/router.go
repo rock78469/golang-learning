@@ -8,6 +8,8 @@ func SetRouter(testType string, num int) {
 		switch num {
 		case 1: // Simple Array Sum
 			hackrank.SimpleArraySum()
+		case 2: // ComparetheTriplets
+			hackrank.ComparetheTriplets()
 		case 4: // Diagonal Difference
 			hackrank.DiagonalDifference()
 		}
