@@ -16,6 +16,8 @@ func SetRouter(testType string, num int) {
 			hackrank.DiagonalDifference()
 		case 5: // Birthday Cake Candles
 			hackrank.BirthdayCakeCandles()
+		case 6: // Time Conversion
+			hackrank.TimeConversion()
 		}
 	case "leetcode":
 		switch num {

@@ -51,3 +51,9 @@ func BirthdayCakeCandles() {
 	r := m.BirthdayCakeCandles(candles)
 	fmt.Println(r)
 }
+
+func TimeConversion() {
+	time := "04:59:59AM"
+	r := m.TimeConversion(time)
+	fmt.Printf(r)
+}
