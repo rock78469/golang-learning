@@ -14,6 +14,8 @@ func SetRouter(testType string, num int) {
 			hackrank.AVeryBigSum()
 		case 4: // Diagonal Difference
 			hackrank.DiagonalDifference()
+		case 5: // Birthday Cake Candles
+			hackrank.BirthdayCakeCandles()
 		}
 	case "leetcode":
 		switch num {
