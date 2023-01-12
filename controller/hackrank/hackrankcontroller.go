@@ -63,3 +63,12 @@ func GradingStudents() {
 	r := m.GradingStudents(grades)
 	fmt.Println(r)
 }
+
+func NumberLineJumps() {
+	x1 := int32(1)
+	x2 := int32(2)
+	v1 := int32(4)
+	v2 := int32(2)
+	r := m.Kangaroo(x1, v1, x2, v2)
+	fmt.Println(r)
+}

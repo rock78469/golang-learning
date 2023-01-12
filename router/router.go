@@ -20,6 +20,8 @@ func SetRouter(testType string, num int) {
 			hackrank.TimeConversion()
 		case 7: // Grading Students
 			hackrank.GradingStudents()
+		case 8: // NumberLineJumps
+			hackrank.NumberLineJumps()
 		}
 	case "leetcode":
 		switch num {
