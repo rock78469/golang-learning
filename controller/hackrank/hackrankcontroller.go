@@ -55,5 +55,11 @@ func BirthdayCakeCandles() {
 func TimeConversion() {
 	time := "04:59:59AM"
 	r := m.TimeConversion(time)
-	fmt.Printf(r)
+	fmt.Println(r)
+}
+
+func GradingStudents() {
+	grades := []int32{23, 63, 78, 56, 89}
+	r := m.GradingStudents(grades)
+	fmt.Println(r)
 }
