@@ -13,17 +13,18 @@ var serverCmd = &cobra.Command{
 		start()
 	},
 }
-
+var site string
 var testType string
 var testNum int
 
 // add command
 func init() {
 	rootCmd.AddCommand(serverCmd)
-	serverCmd.Flags().StringVarP(&testType, "type", "t", "hackrank", "test type")
+	serverCmd.Flags().StringVarP(&site, "site", "s", "hackrank", "site")
+	serverCmd.Flags().StringVarP(&testType, "type", "t", "warmup", "test type")
 	serverCmd.Flags().IntVarP(&testNum, "num", "n", 1, "test number")
 }
 
 func start() {
-	router.SetRouter(testType, testNum)
+	router.SetRouter(site, testType, testNum)
 }
