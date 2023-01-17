@@ -25,6 +25,8 @@ func setHackRankRouter(testtype string, num int) {
 			hackrank.GradingStudents()
 		case 2: // NumberLineJumps
 			hackrank.NumberLineJumps()
+		case 3: // BreakingRecords
+			hackrank.BreakingRecords()
 		}
 	}
 }

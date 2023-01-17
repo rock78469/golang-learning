@@ -34,3 +34,21 @@ func Kangaroo(x1 int32, v1 int32, x2 int32, v2 int32) string {
 	}
 	return s
 }
+
+func BreakingRecords(scores []int32) []int32 {
+	// Write your code here
+	r := []int32{0, 0}
+	highscores := scores[0]
+	lowscores := scores[0]
+	for i := 0; i < len(scores); i++ {
+		if highscores < scores[i] {
+			highscores = scores[i]
+			r[0] += 1
+		}
+		if lowscores > scores[i] {
+			lowscores = scores[i]
+			r[1] += 1
+		}
+	}
+	return r
+}

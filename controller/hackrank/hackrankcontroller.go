@@ -72,3 +72,10 @@ func NumberLineJumps() {
 	r := m.Kangaroo(x1, v1, x2, v2)
 	fmt.Println(r)
 }
+
+// BreakingRecords 輸入一串數字之後，判斷最高分及最低分，分數變化幾次，回傳陣列 [最高分變化次數,最低分變化次數]
+func BreakingRecords() {
+	scores := []int32{7, 3, 20, 6, 9, 1, 24, 67}
+	r := m.BreakingRecords(scores)
+	fmt.Println(r)
+}
