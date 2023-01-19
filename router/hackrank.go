@@ -27,6 +27,13 @@ func setHackRankRouter(testtype string, num int) {
 			hackrank.NumberLineJumps()
 		case 3: // BreakingRecords
 			hackrank.BreakingRecords()
+		case 4: // Subarary Division
+			hackrank.SubararyDivision()
+		}
+	case "string":
+		switch num {
+		case 1: // Camel Case
+			hackrank.CamelCase()
 		}
 	}
 }

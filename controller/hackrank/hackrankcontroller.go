@@ -79,3 +79,21 @@ func BreakingRecords() {
 	r := m.BreakingRecords(scores)
 	fmt.Println(r)
 }
+
+func SubararyDivision() {
+	// s := []int32{1, 2, 1, 3, 2}
+	// d := int32(3)
+	// mm := int32(2)
+	s := []int32{4}
+	d := int32(4)
+	mm := int32(1)
+	r := m.SubararyDivision2(s, d, mm)
+	fmt.Println(r)
+}
+
+// CamelCase 傳入一組字串，判斷有幾組單字，除了第一個單字外，其餘單字開頭皆是大寫
+func CamelCase() {
+	s := "helloWorldRock"
+	r := m.CamelCase(s)
+	fmt.Println(r)
+}
