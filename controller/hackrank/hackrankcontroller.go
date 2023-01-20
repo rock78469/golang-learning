@@ -87,7 +87,7 @@ func SubararyDivision() {
 	s := []int32{4}
 	d := int32(4)
 	mm := int32(1)
-	r := m.SubararyDivision2(s, d, mm)
+	r := m.SubararyDivision(s, d, mm)
 	fmt.Println(r)
 }
 
@@ -95,5 +95,12 @@ func SubararyDivision() {
 func CamelCase() {
 	s := "helloWorldRock"
 	r := m.CamelCase(s)
+	fmt.Println(r)
+}
+
+func StrongPassword() {
+	n := int32(10)
+	password := "#!HankRank"
+	r := m.StrongPassword(n, password)
 	fmt.Println(r)
 }

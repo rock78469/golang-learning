@@ -53,40 +53,15 @@ func BreakingRecords(scores []int32) []int32 {
 	return r
 }
 
-// func SubararyDivision(s []int32, d, m int32) int32 {
-// 	i := int(m)
-// 	for i <= len(s) {
-
-// 		for j := int32(1); j <= m-1; j++ {
-// 			fmt.Printf("%v+%v\n", s[i], s[i+j])
-// 			s[i] += s[i+j]
-// 		}
-// 		fmt.Printf("\n")
-// 		if s[i] == d {
-// 			x += 1
-// 		}
-// 		if x == m {
-// 			break
-// 		}
-
-// 		i++
-// 	}
-// 	return x
-// }
-
-func SubararyDivision2(s []int32, d, m int32) int32 {
-	i := 1
-	j := int(m)
-	count := int32(0)
-	for j <= len(s) {
-		i = 0
-		for x := int32(0); x <= m-1; x++ {
-			i += int(s[x])
+func SubararyDivision(s []int32, d, m int32) int32 {
+	var count int32
+	for i := 0; i <= len(s)-int(m); i++ {
+		for x := 1; x < int(m); x++ {
+			s[i] += s[i+x]
 		}
-		if i == int(d) {
+		if s[i] == d {
 			count++
 		}
-		j++
 	}
 
 	return count

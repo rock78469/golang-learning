@@ -34,6 +34,9 @@ func setHackRankRouter(testtype string, num int) {
 		switch num {
 		case 1: // Camel Case
 			hackrank.CamelCase()
+		case 2: // Strong Password
+			hackrank.StrongPassword()
 		}
+
 	}
 }
